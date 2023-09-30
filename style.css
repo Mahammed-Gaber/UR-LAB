@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 300vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12.5vh;
+    align-items: center;
+}
+
+header nav div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+header nav div ul a{
+    text-decoration: none;
+    margin: 0px 15px 0px 15px;
+    font-size: 20px;
+}
+
+header nav div.logo{
+  color: rgba(0, 0, 255, 0.636);
+  margin-right: 100px;
+}
+
+/* ------------------buttons */
+button {
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(40, 144, 241);
+    border-radius: 15px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(40, 144, 241);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  button span {
+    margin: 10px;
+  }
+
+  button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+
+  button:hover {
+    color: #fff;
+    border: 1px solid rgb(252, 254, 255);
+  }
+
+  button:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+  }
+
+  /* ----------------------search */
+  .input {
+    margin: 20px 0px 20px 260px;
+    border-radius: 10px;
+    outline: 2px solid  #eeeeee;
+    border: 0;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: #f4f9fcbf;
+    outline-offset: 3px;
+    padding: 4px 12.5px;
+    transition: all 0.2s ease;
+    width: 320px;
+  }
+  
+  .input:hover {
+    background-color: #fff;
+  }
+  
+  .input:focus {
+    outline-offset: -6px;
+    background-color: #ffffff;
+  }
+
+section.body{
+    background: url(/images/pexels-karolina-grabowska-4230622.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1%;
+}
+
+section.body div.card{
+    /* position: relative; */
+    top: 50vh;
+    left: 350px;
+    width: 600px;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0b5;
+    box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+}
+
+/* ------------------------ */
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #eeeeee58;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 600px;
+    font-size: 14px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  }
+
+  /* ----------------search button */
+  button.search_button {
+    color: #090909;
+    padding:0px 15px ;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,-6px -6px 12px #ffffff;
+    bottom: 65px;
+    left: 55px;
+   }
+   
+   button.search_button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }
+
+/* ---------------------------------- */
+   .about_us {
+    width: 50%;
+    height: 40vh;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.254);
+    border-radius: 40px;
+    margin: 20px;
+    margin-left: 23%;
+    margin-top: 150px;
+  }
+
+  .about_us h2{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(40, 144, 241);
+  }
+  .about_us p{
+    color: #666;
+    padding: 10px 15px;
+    text-align: end;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  /* -------------------------------- */
+  section.who_are{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  section.who_are div.text{
+    width: 50%;
+  }
+  section.who_are h2{
+    text-align: end;
+    color: rgb(40, 144, 241);
+    /* margin: 50px 70px 30px 0px; */
+    font-size: 40px;
+  }
+
+  section.who_are p{
+    font-size: 20px;
+    text-align: end;
+    color: #666;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+
+  section.who_are img{
+    width: 450px;
+    margin-top: 80px;
+  }
+
+  /* --------------------------------partner */
+  section.partner{
+    margin-top: 15vh;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(40, 144, 241);
+  }
+
+  section.partner div h2{
+    align-items: center;
+    font-size: 45px;
+  }
+
+  section.partner div.images{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  section.partner div.images img:hover{
+    border: 1px solid black;
+    /* transform: scale(1.05); */
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  section.partner div.images img{
+    width: 200px;
+    transition: 1.2s;
+  }
